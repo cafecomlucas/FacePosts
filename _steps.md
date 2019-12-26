@@ -2,23 +2,23 @@
 
 Pasta do projeto criada:
 
-```shell-script
+```zsh
 mkdir rocketseat_desafio_04_react
 ```
 
-```shell-script
+```zsh
 cd rocketseat_desafio_04_react
 ```
 
 Git inicializado:
 
-```shell-script
+```zsh
 git init
 ```
 
 Após criar repositório no github, linkamos ele a pasta criada:
 
-```shell-script
+```zsh
 git remote add origin https://github.com/cafecomlucas/rocketseat_desafio_04_react.git
 ```
 
@@ -26,7 +26,7 @@ git remote add origin https://github.com/cafecomlucas/rocketseat_desafio_04_reac
 
 Com os arquivos adicionados, o commit foi feito e o projeto foi enviado pro repositório:
 
-```shell-script
+```zsh
 git add .
 git commit -m "Inicializa projeto | Adiciona descrição"
 git push -u origin master

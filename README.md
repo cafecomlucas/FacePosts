@@ -20,9 +20,9 @@ Os **componentes** desenvolvidos estão destacados na imagem abaixo. As descriç
 
 ![Componentes](README_assets/components.png)
 
-Header (Amarelo): Responsável por exibir a logo e o link para acessar o perfil.
+**Header (Amarelo)**: Responsável por exibir a logo e o link para acessar o perfil.
 
-PostList (Verde): Responsável por armazenar os dados da listagem de post, esses dados ficam dentro do state do componente e não em uma variável comum. Exemplo:
+**PostList (Verde)**: Responsável por armazenar os dados da listagem de post, esses dados ficam dentro do state do componente e não em uma variável comum. Exemplo:
 
 ```js
 class PostList extends Component {
@@ -56,13 +56,13 @@ class PostList extends Component {
 }
 ```
 
-Post (Vermelho): Responsável por exibir os dados do post, esses dados são recebidos através de uma propriedade recebida do componente PostList. Exemplo:
+**Post (Vermelho)**: Responsável por exibir os dados do post, esses dados são recebidos através de uma propriedade recebida do componente PostList. Exemplo:
 
 ```js
 posts.map(post => <Post key={post.id} data={post} />);
 ```
 
-Comment (Azul): Responsável por exibir um comentário. Os dados do comentário são recebidos por uma propriedade do componente. Dentro do componente Post existe um novo `.map` para listar os comentários do post:
+**Comment (Azul)**: Responsável por exibir um comentário. Os dados do comentário são recebidos por uma propriedade do componente. Dentro do componente Post existe um novo `.map` para listar os comentários do post:
 
 ```js
 data.comments.map(comment => <Comment key={comment.id} data={comment} />);
