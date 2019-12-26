@@ -1,0 +1,7 @@
+{
+  "name": "rocketseat_desafio_04_react",
+  "version": "1.0.0",
+  "description": "Interface estática que lista posts e comentários dos usuários | Utiliza ReactJS, Babel, Webpack e CSS Flexbox",
+  "main": "index.js",
+  "repository": "https://github.com/cafecomlucas/rocketseat_desafio_04_react.git"
+}
