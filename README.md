@@ -1,4 +1,4 @@
-# [Rocketseat] Desafio 04: Criar interface semelhante ao Facebook
+# [Rocketseat] Desafio 04: Criação de interface semelhante ao Facebook
 
 Desafio realizado após a conclusão do módulo 04: [https://github.com/cafecomlucas/rocketseat_04_react_intro](https://github.com/cafecomlucas/rocketseat_04_react_intro)
 
@@ -6,7 +6,10 @@ Desafio realizado após a conclusão do módulo 04: [https://github.com/cafecoml
 
 ## Aplicação
 
-Interface estática semelhante ao Facebook feita com ReactJS, Webpack, Babel e CSS Flexbox.
+Interface estática responsiva semelhante ao Facebook feita com ReactJS, Webpack, Babel e CSS Flexbox. Trata-se apenas do Front-end, portanto, os dados também são estáticos e não são recebidos de nenhuma API.
+
+Mais detalhes sobre o passo a passo em:
+[https://github.com/cafecomlucas/rocketseat_desafio_04_react/blob/master/\_steps.md](https://github.com/cafecomlucas/rocketseat_desafio_04_react/blob/master/_steps.md)
 
 ---
 

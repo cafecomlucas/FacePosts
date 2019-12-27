@@ -71,3 +71,33 @@ Arquivo `App.js` criado e importado pro `index.js`.
 Testes realizados no browser. Estrutura inicial concluída.
 
 ---
+
+## Criação do componente Header
+
+Arquivo `components/Header.js` criado com a estrutura HTML com o logo SVG do Facebook no lado esquerdo e um link fake no lado direito (utilizando Flexbox). A estilização foi feita no arquivo `Header.css` e importada no início do componente. A imagem SVG do Facebook também foi importada no início do componente (foi necessário incluir esse tipo de arquivo no `webpack.config.js`).
+
+---
+
+## Criação do componente para listar todos os Posts
+
+O componente `PostList` foi criado com o estado e a estrutura HTML do componente. É feito um `.map` na lista de posts e para cada item retornamos o componente `Post` com os dados nas propriedades deste componente.
+
+O componente `Post` foi criado com os dados recebidos via propriedades e com a estrutura HTML contendo cada dado recebido. Também foi criado e importado o arquivo `Post.css` para aplicar a estilização. Flexbox utilizado na estilização do nome e da data do usuário.
+
+Componente `App` atualizado para importar o componente `PostList`.
+
+---
+
+## Criação do componente com cada comentário da lista de comentários
+
+O componente `Post` foi modificado para percorer a lista de comentário e para cada comentário retornar o novo componente `Comment` com os dados nas propriedades deste componente.
+
+O componente `Comment` foi criado com os dados recebidos via propriedades e com a estrutura HTML contendo cada dado recebido. Também foi criado e importado o arquivo `Comment.css` para aplicar a estilização.
+
+---
+
+## Ajustes finais
+
+Para finalizar o projeto, alguns itens foram atualizados, tais como: a documentação, algumas estilizações CSS, a maneira de preencher as propriedades dos componentes (utilizando o SPREAD operator) e a transformação dos componentes de classe em componentes de função.
+
+---

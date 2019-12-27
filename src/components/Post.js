@@ -4,24 +4,20 @@ import "./Post.css";
 
 import Comment from "./Comment";
 
-const Post = ({ post }) => {
-  const { author, date, content, comments } = post;
-
-  return (
-    <li className="postContainer">
-      <div className="postContent">
-        <img src={author.avatar} />
-        <div className="authorDetails">
-          <h2>{author.name}</h2>
-          <span>{date}</span>
-        </div>
-        <p>{content}</p>
+const Post = ({ author, date, content, comments }) => (
+  <li className="postContainer">
+    <div className="postContent">
+      <img src={author.avatar} />
+      <div className="authorDetails">
+        <h2>{author.name}</h2>
+        <span>{date}</span>
       </div>
-      {comments.map(comment => {
-        return <Comment key={comment.id} comment={comment} />;
-      })}
-    </li>
-  );
-};
+      <p>{content}</p>
+    </div>
+    {comments.map(comment => {
+      return <Comment key={comment.id} {...comment} />;
+    })}
+  </li>
+);
 
 export default Post;

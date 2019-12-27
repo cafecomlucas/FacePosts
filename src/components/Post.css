@@ -1,18 +1,24 @@
+.postList {
+  width: 100%;
+  padding: 0 20px;
+}
+
 .postContainer {
   max-width: 700px;
   margin: 20px auto 0 auto;
-  background: #eee;
+  background: #ffffff;
   padding: 15px;
-  box-shadow: 0 0 10px #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   font-size: 16px;
 }
 
 .postContainer .postContent {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
 }
 
 .postContent img {
@@ -30,6 +36,7 @@
 .authorDetails h2 {
   font-size: 16px;
   line-height: 19px;
+  margin-bottom: 5px;
 }
 
 .authorDetails span {
