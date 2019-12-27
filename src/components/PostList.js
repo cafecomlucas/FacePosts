@@ -19,9 +19,18 @@ class PostList extends Component {
             id: 1,
             author: {
               name: "Lucas Soares",
+              avatar: "../assets/profile01.jpg"
+            },
+            content:
+              "Recomendo o ReactJS, é uma tecnologia incrível para SPAs. Depois conta pra gente o que você achou dele."
+          },
+          {
+            id: 2,
+            author: {
+              name: "Jessica Pereira",
               avatar: "../assets/profile02.jpg"
             },
-            content: "Recomendo o ReactJS, é uma tecnologia incrível para SPAs."
+            content: "Bacana! Obrigada!"
           }
         ]
       },

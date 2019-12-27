@@ -1,0 +1,21 @@
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.comment img {
+  border-radius: 50%;
+}
+
+.comment p {
+  flex: 1;
+  margin-left: 10px;
+  padding: 15px;
+  background: #ddd;
+  border-radius: 20px;
+}
+
+.comment strong {
+  margin-right: 5px;
+}

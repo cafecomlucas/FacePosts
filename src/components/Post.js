@@ -2,6 +2,8 @@ import React from "react";
 
 import "./Post.css";
 
+import Comment from "./Comment";
+
 const Post = ({ post }) => {
   const { author, date, content, comments } = post;
 
@@ -15,6 +17,9 @@ const Post = ({ post }) => {
         </div>
         <p>{content}</p>
       </div>
+      {comments.map(comment => {
+        return <Comment key={comment.id} comment={comment} />;
+      })}
     </li>
   );
 };
