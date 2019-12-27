@@ -1,0 +1,30 @@
+header {
+  width: 100%;
+  padding: 14px 5px;
+  background: #4a90e2;
+  box-shadow: 0 -5px 20px #000;
+}
+
+header > ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 996px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #f2f2f2;
+}
+
+header .perfil {
+  padding: 10px 0;
+}
+
+header .perfil a {
+  background: no-repeat right 3px url("../assets/account_circle_white_18dp.png");
+  padding: 2px 26px 2px 0;
+}
