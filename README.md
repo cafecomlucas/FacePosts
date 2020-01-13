@@ -6,6 +6,38 @@ Passo a passo documentado em: [https://github.com/cafecomlucas/FacePosts/blob/ma
 
 ![Interface do Facebook Responsiva](README_assets/facepost_scroll_resize.gif)
 
+## Como iniciar
+
+### Versão online
+
+Através do endereço [face-posts.herokuapp.com](https://face-posts.herokuapp.com/)
+
+### Localmente
+
+- Clone este repositório:
+
+```bash
+git clone [caminho_do_repositorio]
+```
+
+- Acesse o diretório criado:
+
+```bash
+cd [nome_da_pasta]
+```
+
+- Instale as dependencias:
+
+```bash
+yarn
+```
+
+- Inicie a aplicação:
+
+```bash
+yarn dev
+```
+
 ## Funcionalidades
 
 Desenvolvimento de todos os elementos visuais da imagem acima com os seguintes **componentes**:
