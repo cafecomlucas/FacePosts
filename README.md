@@ -1,31 +1,18 @@
-# [Rocketseat] Desafio 04: Criação de interface semelhante ao Facebook
+# FacePosts
 
-Desafio realizado após a conclusão do módulo 04: [https://github.com/cafecomlucas/rocketseat_04_react_intro](https://github.com/cafecomlucas/rocketseat_04_react_intro)
+Interface estática responsiva semelhante ao Facebook feita com ReactJS, Webpack, Babel e CSS Flexbox. Trata-se apenas do Front-end, portanto, os dados são estáticos e não são recebidos de nenhuma API.
 
----
-
-## Aplicação
-
-Interface estática responsiva semelhante ao Facebook feita com ReactJS, Webpack, Babel e CSS Flexbox. Trata-se apenas do Front-end, portanto, os dados também são estáticos e não são recebidos de nenhuma API.
-
-Mais detalhes sobre o passo a passo em:
-[https://github.com/cafecomlucas/rocketseat_desafio_04_react/blob/master/\_steps.md](https://github.com/cafecomlucas/rocketseat_desafio_04_react/blob/master/_steps.md)
-
----
+Passo a passo documentado em: [https://github.com/cafecomlucas/FacePosts/blob/master/\_steps.md](https://github.com/cafecomlucas/FacePosts/blob/master/_steps.md)
 
 ## Funcionalidades
 
-Desenvolvimento de todos os elementos visuais de acordo com o layout abaixo.
+![Interface do Facebook Responsiva](README_assets/facepost_scroll_resize.gif)
 
-![Layout Facebook](README_assets/facebook.png)
+Desenvolvimento de todos os elementos visuais da imagem acima com os seguintes **componentes**:
 
-Os **componentes** desenvolvidos estão destacados na imagem abaixo. As descrições das responsabilidades de cada componente estão logo após a imagem.
+**Header**: Responsável por exibir a logo e o link (fake) para acessar o perfil.
 
-![Componentes](README_assets/components.png)
-
-**Header (Amarelo)**: Responsável por exibir a logo e o link para acessar o perfil.
-
-**PostList (Verde)**: Responsável por armazenar os dados da listagem de post, esses dados ficam dentro do state do componente e não em uma variável comum. Exemplo:
+**PostList**: Responsável por armazenar os dados da listagem de post, esses dados ficam dentro do state do componente e não em uma variável comum. Exemplo:
 
 ```js
 class PostList extends Component {
@@ -59,13 +46,13 @@ class PostList extends Component {
 }
 ```
 
-**Post (Vermelho)**: Responsável por exibir os dados do post, esses dados são recebidos através de uma propriedade recebida do componente PostList. Exemplo:
+**Post**: Responsável por exibir os dados do post, esses dados são recebidos através de uma propriedade recebida do componente PostList. Exemplo:
 
 ```js
 posts.map(post => <Post key={post.id} data={post} />);
 ```
 
-**Comment (Azul)**: Responsável por exibir um comentário. Os dados do comentário são recebidos por uma propriedade do componente. Dentro do componente Post existe um novo `.map` para listar os comentários do post:
+**Comment**: Responsável por exibir um comentário. Os dados do comentário são recebidos por uma propriedade do componente. Dentro do componente Post existe um novo `.map` para listar os comentários do post:
 
 ```js
 data.comments.map(comment => <Comment key={comment.id} data={comment} />);
