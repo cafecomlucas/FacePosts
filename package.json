@@ -1,11 +1,12 @@
 {
-  "name": "rocketseat_desafio_04_react",
+  "name": "faceposts",
   "version": "1.0.0",
   "description": "Interface estática que lista posts e comentários dos usuários | Utiliza ReactJS, Babel, Webpack e CSS Flexbox",
   "main": "src/index.js",
   "repository": "https://github.com/cafecomlucas/rocketseat_desafio_04_react.git",
   "scripts": {
-    "dev": "webpack-dev-server --watch --mode development"
+    "dev": "webpack-dev-server --watch --mode development",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
@@ -21,6 +22,8 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"

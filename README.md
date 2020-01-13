@@ -4,9 +4,9 @@ Interface estática responsiva semelhante ao Facebook feita com ReactJS, Webpack
 
 Passo a passo documentado em: [https://github.com/cafecomlucas/FacePosts/blob/master/\_steps.md](https://github.com/cafecomlucas/FacePosts/blob/master/_steps.md)
 
-## Funcionalidades
-
 ![Interface do Facebook Responsiva](README_assets/facepost_scroll_resize.gif)
+
+## Funcionalidades
 
 Desenvolvimento de todos os elementos visuais da imagem acima com os seguintes **componentes**:
 
