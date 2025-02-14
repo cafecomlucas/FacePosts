@@ -10,7 +10,7 @@ Passo a passo documentado em: [https://github.com/cafecomlucas/FacePosts/blob/ma
 
 ### Versão online
 
-Através do endereço [face-posts.herokuapp.com](https://face-posts.herokuapp.com/)
+Através do endereço [faceposts.vercel.app](https://faceposts.vercel.app/)
 
 ### Localmente
 
@@ -53,27 +53,27 @@ class PostList extends Component {
       {
         id: 1,
         author: {
-          name: "Julio Alcantara",
-          avatar: "http://url-da-imagem.com/imagem.jpg"
+          name: 'Julio Alcantara',
+          avatar: 'http://url-da-imagem.com/imagem.jpg',
         },
-        date: "04 Jun 2019",
-        content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
+        date: '04 Jun 2019',
+        content: 'Pessoal, alguém sabe se a Rocketseat está contratando?',
         comments: [
           {
             id: 1,
             author: {
-              name: "Diego Fernandes",
-              avatar: "http://url-da-imagem.com/imagem.jpg"
+              name: 'Diego Fernandes',
+              avatar: 'http://url-da-imagem.com/imagem.jpg',
             },
-            content: "Conteúdo do comentário"
-          }
-        ]
+            content: 'Conteúdo do comentário',
+          },
+        ],
       },
       {
-        id: 2
+        id: 2,
         // Restante dos dados de um novo post
-      }
-    ]
+      },
+    ],
   };
 }
 ```
@@ -81,11 +81,11 @@ class PostList extends Component {
 **Post**: Responsável por exibir os dados do post, esses dados são recebidos através de uma propriedade recebida do componente PostList. Exemplo:
 
 ```js
-posts.map(post => <Post key={post.id} data={post} />);
+posts.map((post) => <Post key={post.id} data={post} />);
 ```
 
 **Comment**: Responsável por exibir um comentário. Os dados do comentário são recebidos por uma propriedade do componente. Dentro do componente Post existe um novo `.map` para listar os comentários do post:
 
 ```js
-data.comments.map(comment => <Comment key={comment.id} data={comment} />);
+data.comments.map((comment) => <Comment key={comment.id} data={comment} />);
 ```
